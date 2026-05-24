@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="sidebar">
+    <div id="my-id-box">
+    <span class="label">Your node ID</span>
+    <span id="my-id">connecting...</span>
+    </div>
+
+    <div id="controls">
+        <select id="target-select">
+            <option value="">— select target node —</option>
+        </select>
+
+        <input type="text" id="msg-input" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send message</button>
+        <button onclick="sendPing()">Ping</button>
+        <button onclick="sendFile()">Send file</button>
+        <button onclick="sendBroadcast()">Broadcast all</button>
+    </div>
+
+    <div id="log"></div>
+</div>
+
+<canvas id="canvas"></canvas>
+
+<script src="sim.js"></script>
+</body>
+</html>
